@@ -26,10 +26,10 @@ const Feed: React.FC<Props> = () => {
           height: `calc(100vh - ${HEADER_HEIGHT}px)`,
         }}
       >
+        <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
         <TagList />
       </div>
       <div className="mid">
-        <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
         <MobileProfileCard />
         <div className="tags">
           <TagList />
