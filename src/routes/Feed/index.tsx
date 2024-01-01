@@ -29,8 +29,8 @@ const Feed: React.FC<Props> = () => {
         <TagList />
       </div>
       <div className="mid">
-        <MobileProfileCard />
         <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
+        <MobileProfileCard />
         <div className="tags">
           <TagList />
         </div>
